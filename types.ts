@@ -1,4 +1,3 @@
-// FIX: Import React to use React.ReactNode type.
 import React from 'react';
 
 export interface Service {
@@ -6,7 +5,7 @@ export interface Service {
   title: string;
   description: string;
   longDescription: string;
-  icon: React.ReactNode;
+  icon: React.ReactElement<any>; // ✅ fixed to allow cloneElement()
 }
 
 export interface TeamMember {
@@ -19,7 +18,7 @@ export interface TeamMember {
 
 export interface BlogPost {
   id: string;
-  title:string;
+  title: string;
   excerpt: string;
   content: string;
   author: string;

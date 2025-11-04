@@ -7,7 +7,7 @@ const ServicesPage: React.FC = () => {
   return (
     <div className="bg-light">
       {/* Page Header */}
-      <section className="bg-gradient-to-r from-primary to-blue-600 py-20 text-white">
+      <section className="bg-gradient-to-r from-primary to-blue-600 py-20 blue-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-extrabold">Our Services</h1>
           <p className="mt-4 text-lg max-w-2xl mx-auto">

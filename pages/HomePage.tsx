@@ -9,12 +9,12 @@ const HomePage: React.FC = () => {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative pt-24 pb-32 text-center bg-gradient-to-br from-blue-50 via-white to-blue-100">
-         <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(to_bottom,white,transparent)]"></div>
+      <section className="relative pt-24 pb-32 text-center bg-linear-to-br from-blue-50 via-white to-blue-100">
+         <div className="absolute inset-0 bg-grid-slate-100 [mask[linear-gradient(to_bottom,white,transparent)]"></div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 tracking-tight">
-            Empowering Innovation with <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400">Intelligent Solutions</span>
-          </h1>
+          <h1 className="text-5xl md:text-7xl font-extrabold text-blue-500 tracking-tight">
+  Empowering Innovation with Intelligent Solutions
+</h1>
           <p className="mt-6 max-w-2xl mx-auto text-lg text-gray-600">
             Aptivora is your partner in building the next generation of digital products. We combine creative design, cutting-edge technology, and data-driven insights to bring your vision to life.
           </p>
