@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Service } from '../types';
 import { ArrowRight } from 'lucide-react';
@@ -10,13 +9,16 @@ interface ServiceCardProps {
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
   return (
-    <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 flex flex-col">
-      <div className="mb-6">{service.icon}</div>
-      <h3 className="text-xl font-bold text-gray-900 mb-2">{service.title}</h3>
-      <p className="text-gray-600 grow">{service.description}</p>
-      <Link to="/services" className="mt-6 text-primary font-semibold inline-flex items-center group">
+    <div className="p-8 rounded-2xl bg-background-card border border-primary/10 hover:border-primary/40 shadow-glow hover:shadow-glow-strong transition-all duration-500 hover:-translate-y-2 group">
+      <div className="mb-6 text-primary text-4xl">{service.icon}</div>
+      <h3 className="text-xl font-bold text-white mb-2">{service.title}</h3>
+      <p className="text-text-muted">{service.description}</p>
+      <Link
+        to="/services"
+        className="mt-6 inline-flex items-center text-primary font-semibold group-hover:text-white transition-all"
+      >
         Learn More
-        <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+        <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-2 transition-transform" />
       </Link>
     </div>
   );

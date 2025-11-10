@@ -1,3 +1,89 @@
-@import "tailwindcss/preflight";
-@import "tailwindcss";
-@import "tailwindcss/utilities";
+/* 🔮 Moving gradient background layer */
+.gradient-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, #00ffff33, #8e2de233, #ff00cc33, #0072ff33);
+  background-size: 400% 400%;
+  animation: gradientFlow 12s ease infinite;
+  mix-blend-mode: overlay;
+  z-index: 1;
+}
+
+/* 💫 Animated glow wave for hero section */
+.hero-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 255, 255, 0.15), transparent 70%),
+              radial-gradient(circle at 20% 80%, rgba(142, 45, 226, 0.2), transparent 70%),
+              radial-gradient(circle at 80% 30%, rgba(255, 0, 204, 0.15), transparent 70%);
+  background-size: 200% 200%;
+  animation: heroGlowMove 12s ease-in-out infinite;
+  mix-blend-mode: screen;
+  z-index: 0;
+}
+
+/* ✨ Gradient text for headline */
+.gradient-text {
+  background: linear-gradient(135deg, #00C6FF 0%, #8E2DE2 50%, #FF00CC 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+/* 🌈 Body background */
+body {
+  background: linear-gradient(145deg, #0f0f12, #1a1a1d, #111111);
+  background-attachment: fixed;
+  color: #EAEAEA;
+}
+
+/* 🔁 Gradient flow animation (used globally) */
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradientFlow {
+  background-size: 300% 300%;
+  animation: gradientFlow 8s ease infinite;
+}
+
+/* 🌠 Hero section light movement */
+@keyframes heroGlowMove {
+  0% { background-position: 50% 0%; }
+  50% { background-position: 50% 100%; }
+  100% { background-position: 50% 0%; }
+}
+
+/* 🪶 Floating animation for logos or elements */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+html {
+  scroll-behavior: smooth;
+}
+@keyframes softGlow {
+  0%, 100% {
+    text-shadow: 0 0 12px rgba(0, 255, 255, 0.4),
+                 0 0 24px rgba(142, 45, 226, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.8),
+                 0 0 40px rgba(142, 45, 226, 0.5);
+  }
+}
+
+.animate-softGlow {
+  animation: softGlow 6s ease-in-out infinite;
+}
+.text-bright {
+  color: #eeedf2;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
