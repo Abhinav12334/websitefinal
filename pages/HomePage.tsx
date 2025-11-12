@@ -5,7 +5,7 @@ import { SERVICES } from '../constants';
 import ServiceCard from '../components/ServiceCard';
 import Reveal from '../components/reveal';
 
-const words = ["Innovation 🚀", "Automation 🤖", "Intelligence 💡", "Transformation 🌐"];
+const words = ["Innovation ", "Automation ", "Intelligence ", "Transformation "];
 
 const HomePage: React.FC = () => {
   const [index, setIndex] = React.useState(0);

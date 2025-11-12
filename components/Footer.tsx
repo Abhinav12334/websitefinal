@@ -12,8 +12,7 @@ const Footer: React.FC = () => {
         {/* Logo + Tagline */}
         <div>
           <Link to="/" className="flex items-center space-x-3">
-            <img src="/logo.png" alt="Aptivora Logo" className="h-12 w-auto" />
-            <span className="text-xl font-bold text-primary">APTIVORA</span>
+            <img src="/logo.png" alt="Aptivora Logo" className="h-25 w-auto" />
           </Link>
           <p className="mt-4 text-sm text-gray-400 leading-relaxed max-w-sm">
             Empowering Innovation with Intelligent Solutions.  

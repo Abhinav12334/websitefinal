@@ -8,6 +8,8 @@ import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import AnimatedBackground from './components/AnimatedBackground';
+import { AnimatePresence } from "framer-motion";
+
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
