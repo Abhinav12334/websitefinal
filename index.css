@@ -14,8 +14,8 @@
   position: absolute;
   inset: 0;
   background: radial-gradient(circle at 50% 50%, rgba(0, 255, 255, 0.15), transparent 70%),
-              radial-gradient(circle at 20% 80%, rgba(142, 45, 226, 0.2), transparent 70%),
-              radial-gradient(circle at 80% 30%, rgba(255, 0, 204, 0.15), transparent 70%);
+    radial-gradient(circle at 20% 80%, rgba(142, 45, 226, 0.2), transparent 70%),
+    radial-gradient(circle at 80% 30%, rgba(255, 0, 204, 0.15), transparent 70%);
   background-size: 200% 200%;
   animation: heroGlowMove 12s ease-in-out infinite;
   mix-blend-mode: screen;
@@ -40,9 +40,17 @@ body {
 
 /* 🔁 Gradient flow animation (used globally) */
 @keyframes gradientFlow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .animate-gradientFlow {
@@ -52,37 +60,67 @@ body {
 
 /* 🌠 Hero section light movement */
 @keyframes heroGlowMove {
-  0% { background-position: 50% 0%; }
-  50% { background-position: 50% 100%; }
-  100% { background-position: 50% 0%; }
+  0% {
+    background-position: 50% 0%;
+  }
+
+  50% {
+    background-position: 50% 100%;
+  }
+
+  100% {
+    background-position: 50% 0%;
+  }
 }
 
 /* 🪶 Floating animation for logos or elements */
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
 }
 
 .animate-float {
   animation: float 5s ease-in-out infinite;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 @keyframes softGlow {
-  0%, 100% {
+
+  0%,
+  100% {
     text-shadow: 0 0 12px rgba(0, 255, 255, 0.4),
-                 0 0 24px rgba(142, 45, 226, 0.3);
+      0 0 24px rgba(142, 45, 226, 0.3);
   }
+
   50% {
     text-shadow: 0 0 20px rgba(0, 255, 255, 0.8),
-                 0 0 40px rgba(142, 45, 226, 0.5);
+      0 0 40px rgba(142, 45, 226, 0.5);
   }
 }
 
 .animate-softGlow {
   animation: softGlow 6s ease-in-out infinite;
 }
+
+.text-bright {
+  color: #eeedf2;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.animate-softGlow {
+  animation: softGlow 6s ease-in-out infinite;
+}
+
 .text-bright {
   color: #eeedf2;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);

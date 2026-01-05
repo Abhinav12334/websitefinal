@@ -5,6 +5,7 @@ import { Menu, X } from 'lucide-react';
 const navLinks = [
   { name: 'Home', path: '/' },
   { name: 'Services', path: '/services' },
+  { name: 'Products', path: '/products' },
   { name: 'About Us', path: '/about' },
   { name: 'Contact', path: '/contact' },
 ];
@@ -21,11 +22,10 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-        isScrolled
-          ? 'bg-[#0f0f12cc] backdrop-blur-md border-b border-primary/30 shadow-[0_0_20px_rgba(0,198,255,0.15)]'
-          : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isScrolled
+        ? 'bg-[#0f0f12cc] backdrop-blur-md border-b border-primary/30 shadow-[0_0_20px_rgba(0,198,255,0.15)]'
+        : 'bg-transparent'
+        }`}
     >
       {/* 💫 Animated Top Glow Line */}
       <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-[#00C6FF] via-[#8E2DE2] to-[#FF00CC] animate-gradientFlow"></div>
@@ -43,8 +43,7 @@ const Header: React.FC = () => {
               key={link.name}
               to={link.path}
               className={({ isActive }) =>
-                `relative text-gray-300 font-medium transition duration-300 hover:text-primary ${
-                  isActive ? 'text-primary' : ''
+                `relative text-gray-300 font-medium transition duration-300 hover:text-primary ${isActive ? 'text-primary' : ''
                 }`
               }
             >
@@ -65,9 +64,8 @@ const Header: React.FC = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden bg-[#0f0f12f5] backdrop-blur-md text-center overflow-hidden transition-all duration-500 ${
-          isOpen ? 'max-h-96' : 'max-h-0'
-        }`}
+        className={`md:hidden bg-[#0f0f12f5] backdrop-blur-md text-center overflow-hidden transition-all duration-500 ${isOpen ? 'max-h-96' : 'max-h-0'
+          }`}
       >
         <div className="flex flex-col py-4 space-y-4">
           {navLinks.map((link) => (
