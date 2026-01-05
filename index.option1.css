@@ -2,7 +2,7 @@
 .gradient-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(120deg, rgba(255, 255, 255, 0.03), rgba(0, 229, 255, 0.05), rgba(10, 10, 10, 0.8), rgba(0, 0, 0, 0.95));
+  background: linear-gradient(120deg, rgba(59, 130, 246, 0.1), rgba(56, 189, 248, 0.05), rgba(15, 23, 42, 0.4), rgba(2, 6, 23, 0.8));
   background-size: 400% 400%;
   animation: gradientFlow 15s ease infinite;
   mix-blend-mode: color-dodge;
@@ -13,9 +13,9 @@
 .hero-glow {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05), transparent 70%),
-    radial-gradient(circle at 20% 80%, rgba(0, 229, 255, 0.05), transparent 70%),
-    radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.05), transparent 70%);
+  background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.15), transparent 70%),
+    radial-gradient(circle at 20% 80%, rgba(56, 189, 248, 0.1), transparent 70%),
+    radial-gradient(circle at 80% 30%, rgba(14, 165, 233, 0.1), transparent 70%);
   background-size: 200% 200%;
   animation: heroGlowMove 15s ease-in-out infinite;
   mix-blend-mode: screen;
@@ -24,18 +24,18 @@
 
 /* ✨ Gradient text for headline */
 .gradient-text {
-  background: linear-gradient(135deg, #E5E7EB 0%, #FFFFFF 50%, #E5E7EB 100%);
+  background: linear-gradient(135deg, #38BDF8 0%, #3B82F6 50%, #60A5FA 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.3));
+  filter: drop-shadow(0 0 2px rgba(59, 130, 246, 0.3));
 }
 
 /* 🌈 Body background */
 body {
-  background: linear-gradient(145deg, #000000, #0A0A0A);
+  background: linear-gradient(145deg, #020617, #0F172A);
   background-attachment: fixed;
-  color: #F3F4F6;
+  color: #F8FAFC;
 }
 
 /* 🔁 Gradient flow animation (used globally) */
@@ -98,13 +98,13 @@ html {
 
   0%,
   100% {
-    text-shadow: 0 0 12px rgba(255, 255, 255, 0.3),
-      0 0 24px rgba(0, 229, 255, 0.2);
+    text-shadow: 0 0 12px rgba(59, 130, 246, 0.4),
+      0 0 24px rgba(56, 189, 248, 0.3);
   }
 
   50% {
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5),
-      0 0 40px rgba(0, 229, 255, 0.4);
+    text-shadow: 0 0 20px rgba(59, 130, 246, 0.8),
+      0 0 40px rgba(56, 189, 248, 0.5);
   }
 }
 
@@ -113,6 +113,15 @@ html {
 }
 
 .text-bright {
-  color: #E5E7EB;
+  color: #38BDF8;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.animate-softGlow {
+  animation: softGlow 6s ease-in-out infinite;
+}
+
+.text-bright {
+  color: #eeedf2;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }

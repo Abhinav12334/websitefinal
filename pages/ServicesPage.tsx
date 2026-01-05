@@ -35,7 +35,7 @@ const ServiceSection = ({
         className="max-w-xl w-full flex flex-col justify-center min-h-[400px]"
       >
         <div className="block md:hidden mb-10">
-          <div className="p-6 rounded-2xl bg-[#1b1b22] border border-primary/20 inline-block">
+          <div className="p-6 rounded-2xl bg-background-card border border-primary/20 inline-block">
             {React.cloneElement(service.icon as any, {
               className: "h-12 w-12 text-primary",
             })}
@@ -67,7 +67,7 @@ const ImageContainer = ({ activeService }: { activeService: typeof SERVICES[0] }
   <div className="relative z-10 w-full h-[600px] flex items-center justify-center p-6">
     {/* Outer Box Structure frame */}
     <div className="w-full h-full p-2 rounded-[2.5rem] bg-gradient-to-br from-white/10 to-transparent border border-white/20 shadow-2xl backdrop-blur-sm">
-      <div className="w-full h-full rounded-[2rem] overflow-hidden bg-[#111] relative group border border-white/5">
+      <div className="w-full h-full rounded-[2rem] overflow-hidden bg-background-light relative group border border-white/5">
         {/* Main AI Image - Static */}
         <img
           src="/ai-side-panel.png"
@@ -108,7 +108,7 @@ const ServicesPage: React.FC = () => {
   const activeService = SERVICES.find(s => s.id === activeServiceId) || SERVICES[0];
 
   return (
-    <div className="relative text-text-light bg-[#0f0f12]">
+    <div className="relative text-text-DEFAULT bg-transparent">
 
       {/* 🌌 Intro / Hero Section */}
       <section className="relative pt-32 pb-20 text-center">
@@ -143,7 +143,7 @@ const ServicesPage: React.FC = () => {
           <div className="relative z-10 w-full h-[600px] flex items-center justify-center p-6">
             {/* Box Frame */}
             <div className="w-full h-full p-2 rounded-[2.5rem] bg-gradient-to-br from-white/10 to-transparent border border-white/10 shadow-2xl backdrop-blur-sm">
-              <div className="w-full h-full rounded-[2rem] overflow-hidden bg-[#111] relative group border border-white/5">
+              <div className="w-full h-full rounded-[2rem] overflow-hidden bg-background-light relative group border border-white/5">
                 {/* Main AI Image - Static */}
                 <img
                   src="/ai-side-panel.png"

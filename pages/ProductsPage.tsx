@@ -55,11 +55,11 @@ const ProductsPage: React.FC = () => {
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.2, duration: 0.5 }}
-                        className="group relative bg-[#1b1b22]/80 backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden hover:border-primary/40 transition-all duration-500 shadow-2xl"
+                        className="group relative bg-background-card/80 backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden hover:border-primary/40 transition-all duration-500 shadow-2xl"
                     >
                         {/* Image Area */}
                         <div className="h-64 overflow-hidden relative">
-                            <div className="absolute inset-0 bg-gradient-to-t from-[#1b1b22] to-transparent z-10"></div>
+                            <div className="absolute inset-0 bg-gradient-to-t from-background-card to-transparent z-10"></div>
                             <img
                                 src={product.image}
                                 alt={product.title}

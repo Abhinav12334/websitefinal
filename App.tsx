@@ -22,7 +22,7 @@ const App: React.FC = () => {
   return (
     <HashRouter>
       <ScrollToTop />
-      <div className="relative flex flex-col min-h-screen text-text-light bg-gradient-to-br from-[#0f0f12] to-[#1b1b22]">
+      <div className="relative flex flex-col min-h-screen text-text-DEFAULT bg-background-DEFAULT">
 
         {/* 🧩 Animated Particle Background */}
         <div className="absolute inset-0 z-0">

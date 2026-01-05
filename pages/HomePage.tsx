@@ -42,7 +42,7 @@ const HomePage: React.FC = () => {
                 duration: 1.2,
                 ease: [0.25, 0.1, 0.25, 1],
               }}
-              className="inline-block ml-4 md:ml-6 bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent drop-shadow-[0_2px_6px_rgba(255,255,255,0.4)]"
+              className="inline-block ml-2 md:ml-4 py-1 pr-2 leading-tight bg-gradient-to-r from-gray-300 via-white to-gray-300 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]"
             >
               {words[index]}
             </motion.span>
@@ -54,7 +54,7 @@ const HomePage: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.2, duration: 1, ease: "easeOut" }}
-            className="text-lg text-gray-300 mb-10 max-w-2xl mx-auto drop-shadow-md"
+            className="text-lg md:text-xl text-gray-300 font-medium mb-10 max-w-2xl mx-auto drop-shadow-md"
           >
             We build futuristic digital products powered by automation, AI, and creative design.
           </motion.p>
@@ -68,13 +68,13 @@ const HomePage: React.FC = () => {
           >
             <Link
               to="/contact"
-              className="bg-primary text-black font-semibold px-8 py-3 rounded-full shadow-glow hover:shadow-glow-strong transition-transform transform hover:scale-105"
+              className="bg-primary text-background-DEFAULT font-bold px-8 py-3 rounded-full shadow-glow hover:shadow-glow-strong transition-transform transform hover:scale-105"
             >
               Get Started
             </Link>
             <Link
               to="/services"
-              className="border border-primary text-primary hover:bg-primary hover:text-black font-semibold px-8 py-3 rounded-full transition-all"
+              className="border border-primary text-primary hover:bg-primary hover:text-background-DEFAULT font-semibold px-8 py-3 rounded-full transition-all"
             >
               Learn More
             </Link>
@@ -84,7 +84,7 @@ const HomePage: React.FC = () => {
 
       {/* 🧠 Services Section */}
       <Reveal>
-        <section className="pt-8 pb-20 bg-gradient-to-b from-transparent via-[#111827] to-[#0a0a0a]">
+        <section className="pt-8 pb-20 bg-gradient-to-b from-transparent via-background-light to-background-DEFAULT">
           <div className="container mx-auto px-6">
             <h2 className="text-4xl font-bold text-center gradient-text mb-12 drop-shadow-md">
               Our Core Services

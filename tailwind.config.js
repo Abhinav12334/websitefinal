@@ -8,30 +8,31 @@ export default {
     extend: {
       colors: {
         background: {
-          DEFAULT: '#111111',       // main background — soft black
-          light: '#1a1a1a',         // lighter section background
-          card: '#222222',          // slightly brighter for cards
+          DEFAULT: '#000000',       // Deep Void Black
+          light: '#0A0A0A',         // Nearly Black
+          card: '#050505',          // Subtle differentiation
         },
         text: {
-          light: '#E5E5E5',
-          muted: '#A0A0A0',
+          light: '#E5E7EB',         // Silver Light (Gray-200)
+          DEFAULT: '#F3F4F6',       // Cool White
+          muted: '#9CA3AF',         // Gray-400
         },
         primary: {
-          DEFAULT: '#00C6FF',       // soft neon cyan
-          dark: '#0096D6',
+          DEFAULT: '#00E5FF',       // Keeping Neon Cyan accent (works with silver)
+          dark: '#0891B2',
         },
         secondary: {
-          DEFAULT: '#8E2DE2',       // purple accent
-          dark: '#4A00E0',
+          DEFAULT: '#3B82F6',       // Keeping Lightning Blue
+          accent: '#60A5FA',
         },
       },
       boxShadow: {
-        glow: '0 0 25px rgba(0, 198, 255, 0.2)',
-        'glow-strong': '0 0 35px rgba(0, 198, 255, 0.5)',
+        glow: '0 0 20px rgba(255, 255, 255, 0.1)', // White/Silver glow
+        'glow-strong': '0 0 40px rgba(0, 229, 255, 0.3)',
       },
       backgroundImage: {
-        'gradient-soft': 'linear-gradient(135deg, #111111 0%, #1a1a1a 50%, #222222 100%)',
-        'radial-dark': 'radial-gradient(circle at 50% 50%, #1a1a1a 0%, #111111 100%)',
+        'gradient-soft': 'linear-gradient(135deg, #000000 0%, #0A0A0A 100%)',
+        'radial-dark': 'radial-gradient(circle at 50% 50%, #0A0A0A 0%, #000000 100%)',
       },
       animation: {
         pulseGlow: 'pulseGlow 3s ease-in-out infinite',
@@ -39,8 +40,8 @@ export default {
       },
       keyframes: {
         pulseGlow: {
-          '0%, 100%': { boxShadow: '0 0 15px rgba(0,198,255,0.3)' },
-          '50%': { boxShadow: '0 0 30px rgba(0,198,255,0.7)' },
+          '0%, 100%': { boxShadow: '0 0 15px rgba(255, 255, 255, 0.1)' },
+          '50%': { boxShadow: '0 0 30px rgba(0, 229, 255, 0.3)' },
         },
         float: {
           '0%, 100%': { transform: 'translateY(0)' },

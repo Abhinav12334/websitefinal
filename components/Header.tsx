@@ -28,7 +28,7 @@ const Header: React.FC = () => {
         }`}
     >
       {/* 💫 Animated Top Glow Line */}
-      <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-[#00C6FF] via-[#8E2DE2] to-[#FF00CC] animate-gradientFlow"></div>
+      <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-primary via-secondary-DEFAULT to-background-light animate-gradientFlow"></div>
 
       <div className="container mx-auto px-6 flex items-center justify-between h-20 relative z-10">
         {/* Logo */}

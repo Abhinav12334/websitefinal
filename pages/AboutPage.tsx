@@ -20,16 +20,16 @@ const AboutPage: React.FC = () => {
       {/* 🧭 Mission / Vision / Values */}
       <section className="py-20 bg-transparent">
         <div className="container mx-auto px-6 grid md:grid-cols-3 gap-10 text-center">
-          {[{icon: Flag, title: "Our Mission", text: "Empower businesses with innovative tech."},
-            {icon: Rocket, title: "Our Vision", text: "Lead global digital transformation."},
-            {icon: Users, title: "Our Values", text: "Collaboration, Integrity, Innovation, Excellence."}]
-            .map(({icon: Icon, title, text}) => (
-              <div key={title} className="p-8 rounded-2xl bg-[#1b1b22]/60 border border-primary/20 shadow-glow backdrop-blur-sm">
+          {[{ icon: Flag, title: "Our Mission", text: "Empower businesses with innovative tech." },
+          { icon: Rocket, title: "Our Vision", text: "Lead global digital transformation." },
+          { icon: Users, title: "Our Values", text: "Collaboration, Integrity, Innovation, Excellence." }]
+            .map(({ icon: Icon, title, text }) => (
+              <div key={title} className="p-8 rounded-2xl bg-background-card/60 border border-primary/20 shadow-glow backdrop-blur-sm">
                 <Icon className="h-12 w-12 mx-auto text-primary animate-float" />
                 <h2 className="text-2xl font-bold gradient-text mt-4">{title}</h2>
                 <p className="mt-2 text-gray-400">{text}</p>
               </div>
-          ))}
+            ))}
         </div>
       </section>
 
