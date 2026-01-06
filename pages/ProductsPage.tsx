@@ -26,7 +26,8 @@ const PRODUCTS = [
 
 const ProductsPage: React.FC = () => {
     return (
-        <div className="pt-32 pb-20 relative px-6 text-white min-h-screen">
+        <div className="relative min-h-screen text-white">
+            {/* 🌌 Hero Section */}
             {/* 🌌 Hero Section */}
             <div className="text-center mb-20 max-w-4xl mx-auto">
                 <motion.h1
@@ -45,6 +46,7 @@ const ProductsPage: React.FC = () => {
                     Innovative platforms designed to power educational institutions and creative organizations.
                 </motion.p>
             </div>
+
 
             {/* 🛒 Products Grid */}
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -86,7 +88,7 @@ const ProductsPage: React.FC = () => {
                     </motion.div>
                 ))}
             </div>
-        </div>
+        </div >
     );
 };
 

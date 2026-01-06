@@ -21,8 +21,18 @@ const HomePage: React.FC = () => {
   return (
     <div className="relative text-text-light">
       {/* 🌌 Hero Section */}
-      <section className="relative flex flex-col items-center justify-center text-center pt-40 pb-24 overflow-hidden bg-transparent">
-        <div className="hero-glow absolute inset-0"></div>
+      <section className="relative flex flex-col items-center justify-center text-center pt-40 pb-24 overflow-hidden min-h-[90vh]">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/company-background.png"
+            alt="Office Atmosphere"
+            className="w-full h-full object-cover opacity-70"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-background-DEFAULT/40 to-background-DEFAULT"></div>
+        </div>
+
+        <div className="hero-glow absolute inset-0 opacity-50"></div>
 
         <div className="relative z-10 max-w-3xl px-4">
           {/* ✨ Smooth Morphing Text */}
