@@ -42,7 +42,7 @@ const HomePage: React.FC = () => {
             transition={{ duration: 1.2, ease: "easeOut" }}
             className="text-5xl md:text-7xl font-extrabold mb-6 leading-snug tracking-wider drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)] text-white text-center"
           >
-            Empowering{" "}
+            Empowerin{" "}
             <motion.span
               key={index}
               initial={{ opacity: 0, scale: 0.95 }}
