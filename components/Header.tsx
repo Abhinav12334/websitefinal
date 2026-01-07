@@ -33,7 +33,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-6 flex items-center justify-between h-20 relative z-10">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-3">
-          <img src="/logo.png" alt="Aptivora Logo" className="h-20 w-auto animate-float" />
+          <img src="/logo.png" alt="Aptivora Logo" className="h-32 w-auto animate-float drop-shadow-[0_0_15px_rgba(255,255,255,1)] mt-6" />
         </Link>
 
         {/* Desktop Nav */}
